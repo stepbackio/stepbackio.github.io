@@ -31,6 +31,27 @@
     .navbar-inverse .navbar-nav li a {
         color: #D5D5D5;
     }
+    .navbar-nav li:hover > ul.dropdown-menu {
+        display: block;
+    }
+    .dropdown-menu {
+        background-color: #4D4D4D;
+        color: #FFF;
+        padding: 1% 0;
+        font-size: 1.2em;
+    }
+    .dropdown-submenu {
+        position:relative;
+        background-color: #4D4D4D;
+        color: #FFF;
+    }
+    .dropdown-submenu>.dropdown-menu {
+        top:0;
+        left:100%;
+        margin-top:-6px;
+        background-color: #4D4D4D;
+        color: #FFF;
+    }
     .carousel-caption {
         top: 50%;
         transform: translateY(-50%);
@@ -43,23 +64,19 @@
         background-color: #4D4D4D;
         border: 2px solid #FFF;
     }
-
     .container {
         margin: 4% auto;
     }
-
     #icon {
         max-width: 200px;
-        margrin: 1% auto;
+        margin: 1% auto;
     }
-
     footer {
         width: 100%;
         background-color: #4D4D4D;
         padding: 3%;
     color: #FFF;    
     }
-
     .fa {
         padding : 15px;
         font-size: 25px;
@@ -75,7 +92,6 @@
             padding: 10px;
         }
     }
-
     @media (max-width: 600px) {
         .carousel-caption {
             display: none;
@@ -102,20 +118,19 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Services</span> <span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Projects</span> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                          <li><a href="#">Service A</a></li>
-                          <li><a href="#">Service B</a></li>
+                          <li><a href="#">Project A</a></li>
+                          <li><a href="#">Project B</a></li>
                           <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Service C</span><span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Projects C</span><span class="caret"></span></a>
                               <ul class="dropdown-menu">
-                                  <li><a href="#">Service C1</a></li>
-                                  <li><a href="#">Service C2</a></li>
-                                  <li><a href="#">Service C3</a></li>
-                                  <li><a href="#">Service C4</a></li>
-                                  <li><a href="#">Service C5</a></li>
+                                  <li><a href="#">Project C1</a></li>
+                                  <li><a href="#">Project C2</a></li>
+                                  <li><a href="#">Project C3</a></li>
+                                  <li><a href="#">Project C4</a></li>
+                                  <li><a href="#">Project C5</a></li>
                               </ul>
                           </li>
                       </ul>
